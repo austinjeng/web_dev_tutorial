@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <base target="_self" />
+    <title>熊貓問卷調查</title>
+  </head>
+  <body>
+    <!--這是熊貓問卷調查-->
+    <form action="" method="GET">
+      <input type="file" name="file" />
+      <br />
+      <label for="myname">姓名:</label>
+      <input
+        id="myname"
+        type="text"
+        name="InputName"
+        minlength="2"
+        maxlength="50"
+        placeholder="輸入你的姓名:"
+        required
+      />
+      <br />
+      <!--這是select and option的例子-->
+      <label for="gender">性別</label>
+      <select name="gender" id="gender" required>
+        <option></option>
+        <option value="male">男性</option>
+        <option value="female">女性</option>
+        <option value="others">其他</option>
+      </select>
+      <br />
+      <label for="tele">電話:</label>
+      <input id="tele" type="text" name="telephone" />
+      <br />
+      <label for="email">信箱:</label>
+      <input id="email" type="email" name="email" value="" required />
+      <br />
+      <label for="age">年齡:</label>
+      <input type="number" name="age" min="0" max="120" step="1.1" />
+      <br />
+      <!--這是Datalist的例子-->
+      <label for="area">地區</label>
+      <input list="areaList" type="text" name="area" id="area" required />
+      <datalist id="areaList">
+        <option value="基隆市">基隆</option>
+        <option value="台北市">台北</option>
+        <option value="新北市">新北</option>
+        <option value="台中市">台中</option>
+      </datalist>
+      <br />
+      <label for="suggestion">給網站的建議</label>
+      <br />
+      <!--這是Textarea的例子-->
+      <textarea
+        name="suggestion"
+        id="suggestion"
+        cols="30"
+        rows="10"
+        placeholder="給建議阿 ㄇㄉ!"
+      ></textarea>
+      <br />
+      <input
+        type="checkbox"
+        id="checkbox"
+        name="news"
+        value="newspaper"
+        checked
+      />
+      <label for="checkbox">訂閱熊貓電子報</label>
+      <br />
+      0<input type="range" min="0" max="1" step="0.1" />1
+      <br />
+      <button type="submit">提交表單</button>
+    </form>
+  </body>
+</html>
